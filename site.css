@@ -1,0 +1,46 @@
+body {
+	font-family: sans-serif;
+}
+
+header {
+	background-color: blue;
+	border-bottom: 1px solid black;
+}
+
+header h1,
+header h2,
+header h3 {
+	color: white;
+}
+
+header ul {
+	list-style-type: none;
+}
+
+header a {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+}
+
+footer {
+	text-align: center;
+	background-color: #CECECE;
+	border-top: 1px solid black;
+}
+
+img {
+	width: 150px;
+}
+
+p {
+	text-align: justify;
+}
+
+img.logo {
+	width: 250px;
+}
+
+form label {
+	font-weight: bold;
+}
