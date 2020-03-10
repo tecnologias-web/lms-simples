@@ -10,7 +10,7 @@
 {% for curso in cursos %}
 	<article class="curso">
 		<h2 class="titulo">
-			<a href="{{ curso.link }}">
+			<a href="{% url 'cursos:curso' curso.sigla %}">
 				{{ curso.nome }}
 			</a>
 		</h2>

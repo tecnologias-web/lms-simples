@@ -9,21 +9,14 @@
 <section class="sobre">
 	<h2>Sobre o Curso</h2>
 	<p>
-		{{ curso.sobre }}
+		{{ curso.descricao }}
 	</p>
 </section>
 <section class="informacoes">
 	<h2>Informações Adicionais</h2>
 
-	<h3>Período</h3>
-	<ul>
-		{% for per in curso.periodo %}
-			<li>{{ per }}</li>
-		{% endfor %}
-	</ul>
-
 	<h3>Duração</h3>
-	<p>{{ curso.duracao }}</p>
+	<p>{{ curso.duracao }} semestres</p>
 
 	<a href="disciplinas">Grade Curricular</a>
 </section>
