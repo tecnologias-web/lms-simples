@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block scripts %}
+<script src="{% static 'scripts/registrar.js' %}" defer></script>
+{% endblock %}
+
+{% block conteudo %}
+<h1>Cadastrar</h1>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    <p>
+        <label for="campo-email">E-mail:</label>
+        <input type="email" name="email" id="campo-email" required />
+    </p>
+    <p>
+        <label for="campo-nome">Nome Completo:</label>
+        <input type="text" name="nome" id="campo-nome" required />
+    </p>
+    <p>
+        <label for="campo-nascimento" >Data de Nascimento:</label>
+        <input type="date" name="nascimento" id="campo-nascimento" required />
+    </p>
+    <p>
+        <label for="campo-password">Senha:</label>
+        <input type="password" name="password" id="campo-password" required />
+    </p>
+    <p>
+        <label for="campo-password2">Confirme sua Senha:</label>
+        <input type="password" name="password2" id="campo-password2" required />
+    </p>
+    <p>
+        <input type="submit" value="Entrar" />
+    </p>
+</form>
+{% endblock %}

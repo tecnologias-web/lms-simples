@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+
+
+<h1>Entrar</h1>
+
+<form
+	method="POST"
+	action=""
+>
+{% csrf_token %}
+	<p>
+		<label for="campo-email" >E-mail:</label>
+		<input type="email" name="email" id="campo-email" required />
+	</p>
+	<p>
+		<label for="campo-senha">Senha:</label>
+		<input type="password" name="password" id="campo-senha" required />
+	</p>
+	<p>
+		<label>
+			Lembrar de Mim? <input type="checkbox" name	"lembrar" value="SIM" />
+		</label>
+		<a href="esqueci.html">Esqueceu a senha?</a>
+	</p>
+	<p>
+		<input type="submit" value="Entrar" />
+	</p>
+</form>
+{% endblock %}
