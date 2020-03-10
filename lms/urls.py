@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from core.views import olaMundo
+from core.views import index, premios
 
 urlpatterns = [
-    path("", olaMundo),
+    path("", index),
+    path("premios/", premios),
     path('admin/', admin.site.urls),
 ]

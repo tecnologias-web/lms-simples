@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+{% block conteudo %}
+<h1>Faculdade Impacta de Tecnologia</h1>
+<section>
+	<h2>Conheça nossos Cursos</h2>
+	<p>
+		Considerada uma das melhores faculdades com foco em tecnologia do País, a <strong>Faculdade Impacta</strong> oferece cursos de <em>Graduação</em>, <em>Pós-Graduação</em> e <em>MBA</em> e cursos técnicos.<br/>
+		Conheça quais são as áreas de conhecimento que a Impacta aborda e saiba um pouco mais sobre cada curso:
+	</p>
+	
+	<figure>
+		<img src="{% static '/imagens/graduacao.jpg' %}" />
+		<img src="{% static '/imagens/tecnico.jpg' %}" />
+		<img src="{% static '/imagens/up.jpg' %}" />
+		<img src="{% static '/imagens/mba.jpg' %}" />
+	</figure>
+</section>
+{% endblock %}

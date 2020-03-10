@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block scripts %}
+<script src="{% static 'scripts/premios.js' %}" defer></script>
+{% endblock %}
+
+{% block conteudo %}
+<h1>{{ titulo }}</h1>
+<section>
+	<p>
+		A Faculdade Impacta é altamente reconhecida por sua atuação no mercado da educação, o que comprova o compromisso da Instituição com o ensino de qualidade e a dedicação do Grupo Impacta em transformar a sociedade através da tecnologia.
+		Desta maneira, ao longo dos anos a Faculdade Impacta tem recebido prêmios e reconhecimentos que são resultados do trabalho contínuo de professores e funcionários e da determinação de seus alunos.
+	</p>
+	<ul class="premios">
+		<li>
+			<a href="#premio1" id="link-premio1">
+				<img src="{% static 'imagens/premio1.png' %}" alt="Graduação em Administração"  class="premio" />
+			</a>
+		</li>
+		<li>
+			<a href="#premio2" id="link-premio2">
+				<img src="{% static 'imagens/premio2.png' %}" alt="Graduação em Análise e Desenvolvimento de Sistemas"  class="premio" />
+			</a>
+		</li>
+		<li>
+			<a href="#premio3" id="link-premio3">
+				<img src="{% static 'imagens/premio3.png' %}" alt="Graduação em Redes de Computadores"  class="premio" />
+			</a>
+		</li>
+		<li>
+			<a href="#premio4" id="link-premio4">
+				<img src="{% static 'imagens/premio4.png' %}" alt="Graduação em Sistemas da Informação"  class="premio" />
+			</a>
+		</li>
+	</ul>
+</section>
+<section>
+	<h2>Prêmio</h2>
+	<article class="descricao" id="premio1">
+		<h3>Graduação em Administração</h3>
+		<p>
+		Nota 4 na avaliação do MEC – 10.ª maior nota entre as faculdades privadas da cidade de São Paulo. 
+		3 estrelas na avaliação realizada pelo Guia do Estudante, da Editora Abril, que seleciona os melhores
+		cursos para os estudantes que estão se preparando para o vestibular. Destaque no portal da
+		Revista Exame como o curso que está entre os melhores do Brasil. (06/2017)
+		</p>
+	</article>
+	<article class="descricao" id="premio2">
+		<h3>Graduação em Análise e Desenvolvimento de Sistemas</h3>
+		<p>
+			Nota 4 na avaliação do ENADE/MEC - 1.º melhor curso da cidade de São Paulo.
+		</p>
+	</article>
+	<article class="descricao" id="premio3">
+		<h3>Graduação em Redes de Computadores</h3>
+		
+		<p> 
+			Nota 3 na avaliação do ENADE/MEC - 4.º melhor curso da cidade de São Paulo. 
+		</p>
+	</article>
+	<article class="descricao" id="premio4">
+		<h3>Graduação em Sistemas da Informação</h3>
+		<p>
+			Nota 4 na avaliação do ENADE/MEC - 3.º melhor curso da cidade de São Paulo.
+		</p>
+	</article>
+</section>
+{% endblock %}
