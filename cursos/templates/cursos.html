@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% block scripts %}
+<link rel="stylesheet" href="{% static 'css/cursos.css' %}" />
+{% endblock %}
+
+{% block conteudo %}
+<h1>Nossos cursos</h1>
+
+{% for curso in cursos %}
+	<article class="curso">
+		<h2 class="titulo">
+			<a href="{{ curso.link }}">
+				{{ curso.nome }}
+			</a>
+		</h2>
+		<p class="descricao">
+			{{ curso.descricao }}
+		</p>
+	</article>
+{% endfor %}
+{% endblock  %}
