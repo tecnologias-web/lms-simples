@@ -1,0 +1,40 @@
+article.curso {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    border: 1px solid #CECECE;
+    padding: 5px;
+    margin: 5px 8px;
+}
+
+article.curso h2.titulo {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    flex: 1 0 0;
+}
+
+article.curso h2.titulo a {
+    color: #1f1f6e;
+    text-decoration: none;
+}
+
+article.curso:nth-child(even) h2.titulo {
+    order: 1;
+}
+
+article.curso p.descricao {
+    flex: 2 0 0;
+    text-align: justify;
+}
+
+@media (max-width: 700px) {
+	article.curso {
+        flex-flow: column nowrap;
+    }
+    
+    article.curso:nth-child(even) h2.titulo {
+        order: 0;
+    }
+}
